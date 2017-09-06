@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DE73670A1F609EBD000B987D /* DraggableStepper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7367001F609EBC000B987D /* DraggableStepper.framework */; };
-		DE73670F1F609EBD000B987D /* DraggableStepperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73670E1F609EBD000B987D /* DraggableStepperTests.swift */; };
-		DE7367111F609EBD000B987D /* DraggableStepper.h in Headers */ = {isa = PBXBuildFile; fileRef = DE7367031F609EBC000B987D /* DraggableStepper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE7367211F609EF1000B987D /* DraggableStepperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73671F1F609EEE000B987D /* DraggableStepperTests.swift */; };
+		DE7367221F609EF7000B987D /* DraggableStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73671C1F609EEE000B987D /* DraggableStepper.swift */; };
+		DE7367231F609EFA000B987D /* DraggableStepper.h in Headers */ = {isa = PBXBuildFile; fileRef = DE73671B1F609EEE000B987D /* DraggableStepper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE7367241F609F2C000B987D /* DraggableStepper.swift in Headers */ = {isa = PBXBuildFile; fileRef = DE73671C1F609EEE000B987D /* DraggableStepper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +26,12 @@
 
 /* Begin PBXFileReference section */
 		DE7367001F609EBC000B987D /* DraggableStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DraggableStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE7367031F609EBC000B987D /* DraggableStepper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DraggableStepper.h; sourceTree = "<group>"; };
-		DE7367041F609EBC000B987D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE7367091F609EBD000B987D /* DraggableStepperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DraggableStepperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE73670E1F609EBD000B987D /* DraggableStepperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableStepperTests.swift; sourceTree = "<group>"; };
-		DE7367101F609EBD000B987D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE73671B1F609EEE000B987D /* DraggableStepper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DraggableStepper.h; sourceTree = "<group>"; };
+		DE73671C1F609EEE000B987D /* DraggableStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableStepper.swift; sourceTree = "<group>"; };
+		DE73671D1F609EEE000B987D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE73671F1F609EEE000B987D /* DraggableStepperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableStepperTests.swift; sourceTree = "<group>"; };
+		DE7367201F609EEE000B987D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +56,8 @@
 		DE7366F61F609EBC000B987D = {
 			isa = PBXGroup;
 			children = (
-				DE7367021F609EBC000B987D /* DraggableStepper */,
-				DE73670D1F609EBD000B987D /* DraggableStepperTests */,
+				DE73671A1F609EEE000B987D /* Sources */,
+				DE73671E1F609EEE000B987D /* Tests */,
 				DE7367011F609EBC000B987D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,22 +71,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE7367021F609EBC000B987D /* DraggableStepper */ = {
+		DE73671A1F609EEE000B987D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DE7367031F609EBC000B987D /* DraggableStepper.h */,
-				DE7367041F609EBC000B987D /* Info.plist */,
+				DE73671B1F609EEE000B987D /* DraggableStepper.h */,
+				DE73671C1F609EEE000B987D /* DraggableStepper.swift */,
+				DE73671D1F609EEE000B987D /* Info.plist */,
 			);
-			path = DraggableStepper;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		DE73670D1F609EBD000B987D /* DraggableStepperTests */ = {
+		DE73671E1F609EEE000B987D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DE73670E1F609EBD000B987D /* DraggableStepperTests.swift */,
-				DE7367101F609EBD000B987D /* Info.plist */,
+				DE73671F1F609EEE000B987D /* DraggableStepperTests.swift */,
+				DE7367201F609EEE000B987D /* Info.plist */,
 			);
-			path = DraggableStepperTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +97,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE7367111F609EBD000B987D /* DraggableStepper.h in Headers */,
+				DE7367231F609EFA000B987D /* DraggableStepper.h in Headers */,
+				DE7367241F609F2C000B987D /* DraggableStepper.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7367221F609EF7000B987D /* DraggableStepper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE73670F1F609EBD000B987D /* DraggableStepperTests.swift in Sources */,
+				DE7367211F609EF1000B987D /* DraggableStepperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +336,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DraggableStepper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hghinaglia.DraggableStepper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,8 +356,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DraggableStepper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hghinaglia.DraggableStepper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,8 +370,9 @@
 		DE7367181F609EBD000B987D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MR4DETKFYQ;
-				INFOPLIST_FILE = DraggableStepperTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hghinaglia.DraggableStepperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,8 +383,9 @@
 		DE7367191F609EBD000B987D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MR4DETKFYQ;
-				INFOPLIST_FILE = DraggableStepperTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hghinaglia.DraggableStepperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
