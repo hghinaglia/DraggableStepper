@@ -10,4 +10,4 @@ github "hghinaglia/DraggableStepper"
 ```
 
 #### Manually
-Download and drop DraggableStepper.swift into your project.
+Download and drop `DraggableStepper.swift` into your project.
